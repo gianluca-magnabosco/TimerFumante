@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+    <Page Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CigarrosFumadosHistory\20240712.txt" />
+    <None Remove="Resources\cigarro.png" />
+    <None Remove="Resources\exit.png" />
+    <None Remove="Resources\pause.png" />
+    <None Remove="Resources\play.png" />
+    <None Remove="Resources\reset.png" />
+    <None Remove="Resources\timerFumante.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CigarrosFumadosHistory\20240712.txt" />
+    <Resource Include="Resources\cigarro.png" />
+    <Resource Include="Resources\exit.png" />
+    <Resource Include="Resources\pause.png" />
+    <Resource Include="Resources\play.png" />
+    <Resource Include="Resources\reset.png" />
+    <Resource Include="Resources\timerFumante.ico" />
+  </ItemGroup>
+
+</Project>
